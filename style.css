@@ -33,7 +33,7 @@ h1 {
   font-size: 70%;
 }
 .sp-2 {
-  background-color: #f7e252;
+  background-color: #71c26a;
   padding-bottom: 1vh;
   margin-bottom: 1vh;
   height: 14vh;
@@ -46,7 +46,7 @@ h1 {
   font-size: 70%;
 }
 .sp-3 {
-  background-color: #f05156;
+  background-color: #f7e252;
   padding-bottom: 1vh;
   margin-bottom: 1vh;
   height: 14vh;
@@ -59,7 +59,7 @@ h1 {
   font-size: 70%;
 }
 .sp-4 {
-  background-color: #71c26a;
+  background-color: #f05156;
   padding-bottom: 1vh;
   margin-bottom: 1vh;
   height: 14vh;
@@ -160,7 +160,7 @@ h1 {
   color: white;
 }
 .pc-2 {
-  background-color: #f7e252;
+  background-color: #71c26a;
   margin-right: 0;
 }
 .pc-2 span {
@@ -168,7 +168,7 @@ h1 {
   color: white;
 }
 .pc-3 {
-  background-color: #f05156;
+  background-color: #f7e252;
   margin-right: 3vh;
 }
 .pc-3 span {
@@ -176,7 +176,7 @@ h1 {
   color: white;
 }
 .pc-4 {
-  background-color: #71c26a;
+  background-color: #f05156;
   margin-right: 0;
 }
 .pc-4 span {
