@@ -21,16 +21,15 @@ if(isSmartPhone()) {
 
 /* --------------------------- */
 
-var member_ps4_1 = ['ぶんた(主催)','しゅーへい(主催)','ケイ(主催)','すぴ','ひこ','のっくん','きなCoCo壱サンチーム','ひらりん','ねむち','シモン','牡丹餅','ろむ'];
-var member_ps4_2 = ['SKND','がる','はと','レンガ','すなぎも','ダイ','ルーク','百郎百夜','AQUA','ゆん(甘口三色団子カレートルコアイスを添えて)','くろみや(甘口三色団子~~を添えて)','ぷくぷや(甘口三色団子~~を添えて)'];
+var member_ps4_1 = ['しゅーへい(主催)','すぴ','哲那','ひらりん','のっくん','ねむち','シモン','牡丹餅','ろむ','SKND','がる','はと'];
+var member_ps4_2 = ['ぶんた(主催)','ひこ','きなCoCoサンチーム','レンガ','すなぎも','ダイ','ルーク','百郎百夜','AQUA','ゆん(甘口三色団子カレートルコアイスを添えて)','くろみや(甘口三色団子~~を添えて)','ぷくぷや(甘口三色団子~~を添えて)'];
 var member_switch = ['しゅーへい(主催)','ケイ(主催)','ひこ','トゥエルブ','hano','メタル','ダイ','モノ','ゆーのう','はと(ムナゲ・ザ・クリキントン)','ゆん(ムナゲ・ザ・クリキントン)','くろみや(ムナゲ・ザ・クリキントン)'];
 
 /* --------------------------- */
 
 
 
-var isTeam = false; // メンバー内に固定のチームが存在するか
-var isSponsor = false; // 主催チームが存在するか
+var shuffleType = "ps4_1";
 
 // 要素指定のための配列
 var position = ['1-1','1-2','1-3','2-1','2-2','2-3','3-1','3-2','3-3','4-1','4-2','4-3'];
@@ -43,8 +42,7 @@ for(var i=0; i<12; i++){
 
 
 $('.ps4-1-sp, .ps4-1-pc').click(function() {  
-  isTeam = false;
-  isSponsor = true;
+  shuffleType = "ps4_1";
   
   for(var i=0; i<12; i++){
     target_list[i] = member_ps4_1[i];
@@ -56,8 +54,7 @@ $('.ps4-1-sp, .ps4-1-pc').click(function() {
 })
 
 $('.ps4-2-sp, .ps4-2-pc').click(function() {  
-  isTeam = true;
-  isSponsor = false;
+  shuffleType = "ps4_2";
   
   for(var i=0; i<12; i++){
     target_list[i] = member_ps4_2[i];
@@ -69,8 +66,7 @@ $('.ps4-2-sp, .ps4-2-pc').click(function() {
 })
 
 $('.switch-sp, .switch-pc').click(function() {  
-  isTeam = true;
-  isSponsor = true;
+  shuffleType = "switch"
   
   for(var i=0; i<12; i++){
     target_list[i] = member_switch[i];
@@ -85,43 +81,43 @@ $('.switch-sp, .switch-pc').click(function() {
 $('.shuffle-sp, .shuffle-pc').click(function() {
   var roulette = [];
   
-  if(isTeam) {
-    if(isSponsor) {
+  switch(shuffleType) {
+    case "ps4_1":
       // 主催チームが存在する場合主催チームは固定
-      var tempArr = [3,4,5,6,7,8];
-      tempArr = shuffle(tempArr);
-      tempArr.unshift(0,1,2);
-      tempArr.push(9,10,11);
-      roulette = tempArr;
-      console.log(roulette);
-      
-    } else {
-      // 固定チームが存在する場合はそのチーム以外のメンバーをシャッフルする
-      var tempArr = [0,1,2,3,4,5,6,7,8];
-      tempArr = shuffle(tempArr);
-      tempArr.push(9,10,11);
-      roulette = tempArr;  
-      console.log(roulette);
-      
-    }
-
-  } else {
-    if(isSponsor) {
-      // 主催チームがある場合は固定
       var tempArr = [3,4,5,6,7,8,9,10,11];
       tempArr = shuffle(tempArr);
       tempArr.unshift(0,1,2);
       roulette = tempArr;
       console.log(roulette);
+      break;
       
-    } else {
+    case "ps4_2":
+      // 固定チームが存在する場合はそのチーム以外のメンバーをシャッフルする
+      var tempArr = [1,2,3,4,5,6,7,8];
+      tempArr = shuffle(tempArr);
+      tempArr.unshift(0);
+      tempArr.push(9,10,11);
+      roulette = tempArr;  
+      console.log(roulette);
+      break;
+      
+    case "switch":
+      // 主催チームがある場合は固定
+      var tempArr = [2,3,4,5,6,7,8];
+      tempArr = shuffle(tempArr);
+      tempArr.unshift(0,1);
+      tempArr.push(9,10,11);
+      roulette = tempArr;
+      console.log(roulette);
+      break;
+      
+    default:
       // 固定チームが存在しない場合は全員シャッフル
       var tempArr = [0,1,2,3,4,5,6,7,8,9,10,11];
       tempArr = shuffle(tempArr);
       roulette = tempArr;    
       console.log(roulette);
-      
-    }
+      break;
   }
   
   // メンバーの表示
