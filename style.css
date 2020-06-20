@@ -1,0 +1,245 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+
+/* ------------------------- */
+/* スマホ */
+.sp-dp {
+  display: block;
+  color: black;
+  font-size: 18px;
+}
+
+.sp-1 {
+  background-color: #3db6f4;
+  padding-bottom: 1vh;
+  margin-bottom: 1vh;
+  height: 14vh;
+  vertical-align: middle;
+  line-height: 4vh;
+}
+.sp-1 span {
+  margin-left: 1vh;
+  color: white;
+  font-size: 70%;
+}
+.sp-2 {
+  background-color: #f7e252;
+  padding-bottom: 1vh;
+  margin-bottom: 1vh;
+  height: 14vh;
+  vertical-align: middle;
+  line-height: 4vh;
+}
+.sp-2 span {
+  margin-left: 1vh;
+  color: white;
+  font-size: 70%;
+}
+.sp-3 {
+  background-color: #f05156;
+  padding-bottom: 1vh;
+  margin-bottom: 1vh;
+  height: 14vh;
+  vertical-align: middle;
+  line-height: 4vh;
+}
+.sp-3 span {
+  margin-left: 1vh;
+  color: white;
+  font-size: 70%;
+}
+.sp-4 {
+  background-color: #71c26a;
+  padding-bottom: 1vh;
+  margin-bottom: 1vh;
+  height: 14vh;
+  vertical-align: middle;
+  line-height: 4vh;
+}
+.sp-4 span {
+  margin-left: 1vh;
+  color: white;
+  font-size: 70%;
+}
+
+.selecter-sp {
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 3vh;
+  height: 5vh;
+  vertical-align: middle;
+  line-height: 5vh;
+  font-size: 80%;
+}
+.selecter-sp:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.ps4-1-sp {
+  background-color: #bdc2cf;
+  margin-right: 1vh;
+  margin-left:  1vh;
+  float: left;
+  width: 25vw;
+  height: 5vh;
+}
+.ps4-2-sp {
+  background-color: #bdc2cf;
+  margin-right: 1vh;
+  float: left;
+  width: 25vw;
+  height: 5vh;
+}
+.switch-sp {
+  background-color: #bdc2cf;
+  margin-right: 1vh;
+  float: left;
+  width: 25vw;
+  height: 5vh;
+}
+
+.shuffle-sp {
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 5vh;
+  margin-top: 5vh;
+  background-color: #bdc2cf;
+  height: 5vh;
+}
+
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* PC */
+.pc-dp {
+  display: block;
+  color: black;
+  font-size: 26px;
+}
+
+.container {
+  width: 85vw;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+.container:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.item {
+  /*border: 1px solid #999;*/
+  float: left;
+  width: 40vw;
+  height: 20vh;
+  margin-bottom: 1em;
+  font-size: 70%;
+  vertical-align: middle;
+  line-height: 6vh;
+}
+.pc-1 {
+  background-color: #3db6f4;
+  margin-right: 3vh;
+}
+.pc-1 span {
+  margin-left: 1vh;
+  color: white;
+}
+.pc-2 {
+  background-color: #f7e252;
+  margin-right: 0;
+}
+.pc-2 span {
+  margin-left: 1vh;
+  color: white;
+}
+.pc-3 {
+  background-color: #f05156;
+  margin-right: 3vh;
+}
+.pc-3 span {
+  margin-left: 1vh;
+  color: white;
+}
+.pc-4 {
+  background-color: #71c26a;
+  margin-right: 0;
+}
+.pc-4 span {
+  margin-left: 1vh;
+  color: white;
+}
+
+.selecter-pc {
+  display: block;
+  width: 85vw;
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+}
+.selecter-pc:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.ps4-1-pc {
+  background-color: #bdc2cf;
+  float: left;
+  width: 26vw;
+  height: 5vh;
+  margin-right: 2vh;
+  margin-left: 1vh;
+}
+.ps4-1-pc:hover {
+  opacity: 0.6;
+}
+.ps4-2-pc {
+  background-color: #bdc2cf;
+  float: left;
+  width: 26vw;
+  height: 5vh;
+  margin-right: 2vh;
+}
+.ps4-2-pc:hover {
+  opacity: 0.6;
+}
+.switch-pc {
+  background-color: #bdc2cf;
+  float: left;
+  width: 26vw;
+  height: 5vh;
+  margin-right: 2vh;
+}
+.switch-pc:hover {
+  opacity: 0.6;
+}
+
+.shuffle-pc {
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 5vh;
+  margin-top: 5vh;
+  background-color: #bdc2cf;
+  height: 5vh;
+  width: 30vw;
+}
+.shuffle-pc:hover {
+  opacity: 0.6;
+}
+
+/* ------------------------- */
