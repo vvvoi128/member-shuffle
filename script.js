@@ -25,7 +25,7 @@ var member_ps4_1 = ['しゅーへい(主催) shuhei-0527','すぴ Weiss_SPI_tz62
                     ,'のっくん nottkun','ねむち SleepyNemuchi','シモン pan_aerial555','牡丹餅 B0tam0ch1Chan','ろむ Romu_romoon','SKND SKND_banketsu','がる Gallvesta-17841','はと hato3-pigeon'];
 var member_ps4_2 = ['ぶんた(主催) bunbunta02-25','ひこ HIKOOSEN','きなCoCo壱サンチーム dark-ness123','レンガ Renga-bricky3715','すなぎも xTPx_sunagimo','ダイ Silver_is_MyWife'
                     ,'ルーク iris3gd','百郎百夜 hyakuro1008','AQUA IXx-AQUA-xXI','ゆん(甘口三色団子カレートルコアイスを添えて) luneglycine','くろみや(甘口三色団子~~を添えて) kuromy_ia','ぷくぷや(甘口三色団子~~を添えて) pukupuya_0527'];
-var member_switch = ['しゅーへい(主催)','ケイ(主催) kkkei','ひこ','トゥエルブ','hano','メタル','ダイ','モノ のと','ゆーのう パブロおじさん ゆの','はと(ムナゲ・ザ・クリキントン)','ゆん(ムナゲ・ザ・クリキントン)','くろみや(ムナゲ・ザ・クリキントン)'];
+var member_switch = ['しゅーへい(主催 -固定)','ケイ kkkei(主催 -固定)','ひこ','トゥエルブ Twepen','hano','メタル','ダイ','モノ のと','ゆーのう パブロおじさん ゆの','はと はとさん(ムナゲ・ザ・クリキントン -固定チーム)','ゆん ゆんばぁば(ムナゲ・ザ・クリキントン -固定チーム)','くろみや(ムナゲ・ザ・クリキントン -固定チーム)'];
 
 /* --------------------------- */
 
